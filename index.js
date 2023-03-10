@@ -1,7 +1,8 @@
 console.log("Hello World")
 let input=document.querySelector('input');
 let btn=document.querySelector('button');
-let randomvalue=Math.floor(Math.random()*10)+1;
+let randomvalue=Math.floor(Math.random()*101);
+   console.log(randomvalue);
    let guess = 1;
 btn.addEventListener('click',()=>{
     let inputValue = input.value;
@@ -15,5 +16,6 @@ btn.addEventListener('click',()=>{
       guess++;
       alert("OOPS SORRY!! TRY A GREATER NUMBER");
     }
+    input.value="",
     console.log(inputValue)
 })
